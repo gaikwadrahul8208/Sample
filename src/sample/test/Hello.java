@@ -2,7 +2,6 @@ package sample.test;
 
 import java.io.IOException;
 
-import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -18,8 +17,16 @@ public class Hello extends HttpServlet {
 	private static Logger LOGGER = Logger.getLogger(Hello.class);
  
     protected void doPost(HttpServletRequest request,
-            HttpServletResponse response) throws ServletException, IOException {
-    		
+            HttpServletResponse response) throws IOException {
+    	
+    	
+    	LOGGER.trace("Trace Message!");
+    	LOGGER.debug("Debug Message!");
+    	LOGGER.info("Info Message!");
+    	LOGGER.warn("Warn Message!");
+    	LOGGER.error("Error Message!");
+    	LOGGER.fatal("Fatal Message!");
+    	LOGGER.info("For test Info Message!");
     	
     /*	
     	String path = "/";
@@ -44,12 +51,7 @@ public class Hello extends HttpServlet {
 		
 	//	String sharedLink = services.createShareLink("/RequiredData.txt");
 	
-    	LOGGER.trace("Trace Message!");
-    	LOGGER.debug("Debug Message!");
-    	LOGGER.info("Info Message!");
-    	LOGGER.warn("Warn Message!");
-    	LOGGER.error("Error Message!");
-    	LOGGER.fatal("Fatal Message!");
+    	
         
 	/*	try {
 			 DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
