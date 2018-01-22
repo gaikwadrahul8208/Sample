@@ -28,6 +28,7 @@ public class Hello extends HttpServlet {
     	LOGGER.fatal("Fatal Message!");
     	LOGGER.info("For test Info Message!");
     	System.out.println("End of Logger Messages");
+    	System.out.println("End of Logger Messages");
     	
     /*	
     	String path = "/";
