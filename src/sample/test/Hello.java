@@ -19,7 +19,7 @@ public class Hello extends HttpServlet {
     protected void doPost(HttpServletRequest request,
             HttpServletResponse response) throws IOException {
     	
-    	
+    	System.out.println("Logger Messages");
     	LOGGER.trace("Trace Message!");
     	LOGGER.debug("Debug Message!");
     	LOGGER.info("Info Message!");
