@@ -15,6 +15,7 @@
 <body>
 
 <form action="loginServlet" method="post">
+<input type="text"> 
 <input type="submit" value="Load_Logs">
 </form>
 <div id="demo"></div>
